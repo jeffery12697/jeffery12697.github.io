@@ -1,9 +1,22 @@
-h1,h2,h3,h4,h5{
+h1,h2,h3,h5{
+    letter-spacing: 2px;
     font-family: 'Anton', sans-serif;
 }
 
 p,input{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#intro h1{
+    font-family: 'Rufina', serif;
+    letter-spacing: 1px;
+}
+
+#intro p{
+    color:#928490;
+    font-family: 'EB Garamond', serif;
+    font-style:italic;
+    font-size: 20px;
 }
 
 #intro .jumbotron{
@@ -53,6 +66,11 @@ header li{
     text-transform: capitalize;
 }
 
+#second p{
+    margin: 15px 0;
+    font-size: 18px;
+}
+
 #intro p.lead{
     font-size: 18pt;
     text-transform: capitalize;
@@ -91,7 +109,10 @@ header li{
     text-shadow: black;
 }
 
-#latest 
+#contact button{
+    background-color: #C09247;
+    border-style:none
+}
 
 #footer *{
     margin: 0;
@@ -125,6 +146,8 @@ header li{
 }
 
 #footer .col-md-4 h4{
+    line-height: 1.5;
+    font-family:'Poppins', sans-serif;;
     font-size: 24px;
     color: #ffffff;
     text-transform: capitalize;
