@@ -8,14 +8,14 @@ p,input{
 
 #intro .jumbotron{
     height: 100vh;
-    background-image: url(../pictures/792020_210428.jpg);
+    background-image: url(../pictures/792020_210428_0.jpg);
     background-size: cover;
     transition: 200ms;
 }
 
 #intro .jumbotron:hover{
     height: 100vh;
-    background-image: url(../pictures/792020_210428_0.jpg);
+    background-image: url(../pictures/DSC_3719.JPG);
     background-size: cover;
     transition: 200ms;
 }
