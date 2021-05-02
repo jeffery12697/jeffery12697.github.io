@@ -28,7 +28,7 @@ p,input{
 
 #intro .jumbotron:hover{
     height: 100vh;
-    background-image: url(../pictures/DSC_3719.JPG);
+    background-image: url(../pictures/174898.jpg);
     background-size: cover;
     transition: 200ms;
 }
@@ -58,7 +58,12 @@ header li{
 
 #second h2.mb-4{
     font-size: 34px;
+    color: #ED7458;
     text-transform: capitalize;
+}
+
+#second h3{
+    color:#8E7C68;
 }
 
 #second h3.mt-2\ mb-0{
@@ -82,14 +87,27 @@ header li{
 }
 
 #latest h2{
+    color: #ED7458;
     margin-bottom: 80px;
     font-size: 34px;
     text-transform: capitalize;
 }
 #latest .lower h3{
+    font-family: 'Oswald', sans-serif;
+    color:#8E7C68;
     font-size: 30px;
     text-transform: capitalize;
 }
+#latest .lower h3:hover{
+    font-family: 'Oswald', sans-serif;
+    color: #333D51;
+    padding-left: 4px;
+} 
+
+#latest .lower p{
+    color:#928490;
+}
+
 #latest .outer{
     background-color:  whitesmoke;
     box-shadow: 0 0 8px rgba(0,0,0,0.08);
@@ -100,6 +118,7 @@ header li{
 }
 
 #latest a{
+    
     color: black;
 }
 
@@ -112,6 +131,14 @@ header li{
 #contact button{
     background-color: #C09247;
     border-style:none
+}
+
+#contact h2{
+    color: #ED7458;
+}
+
+#contact p{
+    color:#333D51;
 }
 
 #footer *{
@@ -172,7 +199,6 @@ header li{
 
 #footer .col-md-4 ul li a{
     font-size: 16px;
-    text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
