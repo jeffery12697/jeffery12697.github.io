@@ -4,6 +4,9 @@
 https://www.youtube.com/watch?v=_6GzZfJP2VE&t=151s
 https://www.youtube.com/watch?v=9cKsq14Kfsw
 
+版面配置參考
+https://chiayi-lin.github.io/
+
 ### Header
 使用 Bootstrap4 內建 components 的 Navbar 製作，並連結個人簡歷的各個 section，Project 有下拉選單可以直接連結專案
 
