@@ -26,4 +26,4 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw
 
 ### footer
 
-分為三的部分 Have Questions?、Links、Learn more，版面配置為 col-md-4 ，文字搭配 icon，連結都是可以點且如果點到文字都會稍微右移。
+分為三的部分 Have Questions?、Links、Learn more，版面配置為 col-md-4 ，文字搭配 icon，所有連結都是可以點且如果點到文字都會稍微右移且換顏色。
