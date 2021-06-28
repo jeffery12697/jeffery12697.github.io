@@ -41,8 +41,8 @@ window.addEventListener("keydown", (e) => {
             audio.play();
             document.getElementById("points").innerHTML =
               parseInt(document.getElementById("points").innerHTML) + 1;
-            if(parseInt(document.getElementById("points").innerHTML) + 1 % 50 == 0){
-              vaccineCount += 10;
+            if(parseInt(document.getElementById("points").innerHTML) % 25 == 0){
+              vaccineCount += 5;
             }
           }
         }
@@ -91,8 +91,8 @@ window.addEventListener("keydown", (e) => {
             mask.remove();
             document.getElementById("points").innerHTML =
               parseInt(document.getElementById("points").innerHTML) + 1;
-              if(parseInt(document.getElementById("points").innerHTML) % 50 == 0){
-                vaccineCount += 10;
+              if(parseInt(document.getElementById("points").innerHTML) % 25 == 0){
+                vaccineCount += 5;
               }
               return;
           }
@@ -133,19 +133,12 @@ var moveviruss = setInterval(() => {
 
   if (viruss != undefined) {
     for (var i = 0; i < viruss.length; i++) {
-      //Now I have to increase the top of each rock,so that the rocks can move downwards..
-      var virus = viruss[i]; //getting each rock
+      var virus = viruss[i]; 
       var virustop = parseInt(
         window.getComputedStyle(virus).getPropertyValue("top")
       );
-      var mark = false;
+
       if (virustop >= 475) {
-        const audio = document.createElement("audio");
-        audio.src = "die.mp3";
-        audio.play();
-        mark = true;
-      }
-      if(mark){
         alert("遊戲結束，按關閉後重新開始");
         clearInterval(moveviruss);
         $("div").removeClass("viruss");
