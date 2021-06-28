@@ -115,7 +115,7 @@ window.addEventListener("keydown", (e) => {
 });
 
 var generateviruss = setInterval(() => {
-  if(getRandomInt(0, 100) % 3 != 0){
+  if(getRandomInt(0, 100) % 2){
     var virus = document.createElement("div");
     virus.classList.add("viruss");
     
