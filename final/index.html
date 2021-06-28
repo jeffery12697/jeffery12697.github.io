@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taiwan fights the virus</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      overflow: hidden;
+      background: url("taiwanBackground.jpg");
+      background-size: cover;
+    }
+    #board {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid blanchedalmond;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    #taiwan {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: url("taiwan.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      bottom: 0px;
+    }
+
+    .vaccines {
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 20px;
+      height: 20px;
+      transform:rotate(-45deg);
+      background: url("vaccine.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .viruss {
+      position: absolute;
+      top: 0px;
+      width: 70px;
+      height: 70px;
+      background: url("virus.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #points {
+      position: absolute;
+      top: 0px;
+      margin: 40px;
+      opacity: 0.7;
+      font-size: 10em;
+      color: white;
+    }
+
+    #heart {
+      position: absolute;
+      top: 0px;
+      margin: 40px;
+      opacity: 0.7;
+      font-size: 10em;
+      color: white;
+    }
+
+    .masks{
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 20px;
+      height: 20px;
+      background: url("mask.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <script src="jquery.min.js"></script>
+  <script src="lodash.js"></script>
+  <script src="app.js" defer></script>
+  <body>
+    <div id="board">
+      <div class="viruss"></div>
+      <div id="taiwan"></div>
+    </div>
+    <div id="points">0</div>
+    <div id="heart"></div>
+  </body>
+</html>
