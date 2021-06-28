@@ -134,7 +134,7 @@ var moveviruss = setInterval(() => {
       );
       //475 => boardheight - rockheight + 25
       if (virustop >= 475) {
-        alert("Game Over");
+        alert("遊戲結束，按關閉後重新開始");
         clearInterval(moveviruss);
         $("div").removeClass("viruss");
         window.location.reload();
