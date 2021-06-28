@@ -36,6 +36,9 @@ window.addEventListener("keydown", (e) => {
             vaccinebound.bottom <= virusbound.bottom
           ) {
             virus.parentElement.removeChild(virus); 
+            const audio = document.createElement("audio");
+            audio.src = "Point.mp3";
+            audio.play();
             document.getElementById("points").innerHTML =
               parseInt(document.getElementById("points").innerHTML) + 1;
             if(parseInt(document.getElementById("points").innerHTML) + 1 % 50 == 0){
@@ -82,6 +85,9 @@ window.addEventListener("keydown", (e) => {
           ) {
             virus.parentElement.removeChild(virus); 
             $("div").removeClass(".mask");
+            const audio = document.createElement("audio");
+            audio.src = "Point.mp3";
+            audio.play();
             mask.remove();
             document.getElementById("points").innerHTML =
               parseInt(document.getElementById("points").innerHTML) + 1;
@@ -132,8 +138,14 @@ var moveviruss = setInterval(() => {
       var virustop = parseInt(
         window.getComputedStyle(virus).getPropertyValue("top")
       );
-      //475 => boardheight - rockheight + 25
+      var mark = false;
       if (virustop >= 475) {
+        const audio = document.createElement("audio");
+        audio.src = "die.mp3";
+        audio.play();
+        mark = true;
+      }
+      if(mark){
         alert("遊戲結束，按關閉後重新開始");
         clearInterval(moveviruss);
         $("div").removeClass("viruss");
